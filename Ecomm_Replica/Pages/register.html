@@ -16,16 +16,34 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+
+<link rel="stylesheet" href="../css/registerstyle.css">
+
+
   </head>
 
   <body>
+    
     <header>
-      <form action="action_page.php">
+      <a href="index.html">Home Page</a>
+      <a href="login.html">login</a>
+      <a href="checkout.html">checkout</a>
+      <a href="register.html">register</a>
+      <a href="products.html">products</a>
+  
+  
+      </header>
+
+
+
+      <form action="index.html">
         <div class="container">
           <h1>Register</h1>
           <p>Please fill in this form to create an account.</p>
-          <hr>
       
+          <label for="Username"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="Username" id="Username" required>
+
           <label for="email"><b>Email</b></label>
           <input type="text" placeholder="Enter Email" name="email" id="email" required>
       
@@ -34,17 +52,32 @@
       
           <label for="psw-repeat"><b>Repeat Password</b></label>
           <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
-          <hr>
+          
+
+
+          <p>How did you hear about us?</p>
+
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="hearAbout" id="friend" value="Friend">
+            <label class="form-check-label" for="friend"><b>Friend</b></label>
+        </div> <br>
+
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="hearAbout" id="Linkedin" value="Linkedin">
+          <label class="form-check-label" for="Linkedin"><b>Linkedin</b></label>
+      </div>
+
+
       
           <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
           <button type="submit" class="registerbtn">Register</button>
         </div>
       
         <div class="container signin">
-          <p>Already have an account? <a href="#">Sign in</a>.</p>
+          <p>Already have an account? <a href="login.html">Sign in</a>.</p>
         </div>
       </form>
-    </header>
+    
 
 
 
